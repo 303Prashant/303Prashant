@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthia - Deepfake Detection</title>
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        .nav-link {
+            @apply px-4 py-2 hover:text-primary transition-colors;
+        }
+
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12;
+        }
+
+        .team-card {
+            @apply bg-white rounded-lg shadow-lg p-6 text-center transition-transform hover:scale-105;
+        }
+
+        .social-icon {
+            @apply text-gray-600 hover:text-primary transition-colors mx-2;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-primary">Synthia</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 relative bg-[url('hero-bg.jpg')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-5xl font-bold leading-tight text-white">
+                     Defending Against Deepfakes and Information Malware
+                    </h1>
+    
+                    <p class="text-xl text-gray-300">
+                        Threat to the authenticity of online content
+                    </p>
+                    <button class="bg-primary bg-gray-200 text-black px-8 py-3 rounded-lg 
+                                 hover:text-2xl transition-colors">
+                        Try Demo
+                    </button>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Vt1tK5qBiwJYMKMQmvnJoJzUB_3rY3pKEw&s" 
+                             alt="Deepfake Defense" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+        </div>
+    </section>    
+
+    <!-- Info Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-2xl fontawesome hover:scale-110 transition-transform duration-300">
+                        How It Works
+                    </h2>
+                    <p class="text-gray-600 font-bold text-4xl hover:scale-105 transition-transform duration-300">
+                        We save time and remove uncertainty by automatically determining if digital media is AI-generated
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Add relevant icons/images here -->
+                    <div class="p-6 bg-gray-50 rounded-lg text-left">
+                        <img src="https://thesentinel.ai/media/tech/icon1.svg" alt="Step 1">
+                    <p><strong>1.</strong> You upload digital media through our website or API</p>
+                    </div>
+                    <!-- <div class="grid grid-cols-2 gap-6"> -->
+                        <!-- Add relevant icons/images here -->
+                        <div class="p-6 bg-gray-50 rounded-lg text-left">
+                            <img src="https://thesentinel.ai/media/tech/icon2.svg" alt="Step 2">
+                            <p><strong>2.</strong> Our system automatically analyzes for AI-forgery</p>        
+                        </div>
+                        <!-- <div class="grid grid-cols-2 gap-6"> -->
+                            <!-- Add relevant icons/images here -->
+                            <div class="p-6 bg-gray-50 rounded-lg text-left">
+                                <img src="https://thesentinel.ai/media/tech/icon3.svg" alt="Step 3">
+                                <p><strong>3.</strong> Real</p>            
+                            </div>
+                    <div class="p-6 bg-gray-50 rounded-lg text-left">
+                        <img src="https://thesentinel.ai/media/tech/icon4.svg" alt="Step 4">
+                        <p><strong>4.</strong> Detection results</p>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- TechStack Section -->
+ <section class="bg-white py-20">
+            <div class="grid grid-cols-2 gap-6">
+                    <!-- <div class="grid grid-cols-2 gap-6"> -->
+                            <!-- Add relevant icons/images here -->
+                            <div class="p-6 bg-gray-50 rounded-lg text-left">
+                                <img src="https://thesentinel.ai/media/tech/icon3.svg" alt="Step 3">
+                                <p><strong>3.</strong> Real</p>            
+                            </div>
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-left">
+                    <div class="space-y-6">
+                        <h2 class="text-2xl ">Our Technology</h2>
+                        <p class="text-gray-600 font-bold text-3xl">
+                            It typically utilizes various methods to analyze digital content and determine whether it has been manipulated or generated by AI.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-2xl font-bold ">Contributors</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Team Member"
+                        class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Aman Tiwari</h3>
+                    <p class="text-gray-600 mb-4">API Handler</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Team Member"
+                        class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Ashish Kumar</h3>
+                    <p class="text-gray-600 mb-4">UI/UX Designer</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Team Member"
+                        class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Prashant Mishra</h3>
+                    <p class="text-gray-600 mb-4">ML Engineer</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Team Member"
+                        class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Salman Ahmad</h3>
+                    <p class="text-gray-600 mb-4">engineer</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Repeat for other team members -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <i class="fas fa-tachometer-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Real-time Detection</h3>
+                    <p class="text-gray-600">Instant analysis and results</p>
+                </div>
+                <!-- Add more feature cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Synthia</h3>
+                    <p class="text-gray-400">Advanced deepfake detection for a safer digital world</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white">Home</a></li>
+                        <li><a href="#features" class="hover:text-white">Features</a></li>
+                        <li><a href="#about" class="hover:text-white">About</a></li>
+                    </ul>
+                </div>
+                <!-- Add more footer columns -->
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Synthia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
